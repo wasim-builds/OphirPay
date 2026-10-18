@@ -10,7 +10,7 @@ env:
   BACKUP_RETENTION_DAYS: 30
 
 
-# -- Global Concurrency — singleton group for scheduled runs --------
+# -- Global Concurrency - singleton group for scheduled runs --------
 concurrency:
   group: ${{ github.workflow }}
 

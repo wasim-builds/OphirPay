@@ -23,7 +23,7 @@ permissions:
   pull-requests: write
 
 
-# -- Global Concurrency — cancel stale runs on same PR --------
+# -- Global Concurrency - cancel stale runs on same PR --------
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
