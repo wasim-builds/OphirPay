@@ -320,7 +320,7 @@ export default function ApiKeysPage() {
         {newRawKey && (
           <div className="p-3 rounded-lg bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800">
             <p className="text-sm text-green-700 dark:text-green-400 font-medium mb-2">
-              New key — copy it now:
+              Key created — copy it now:
             </p>
             <div className="flex items-center gap-2">
               <code className="flex-1 break-all text-xs font-mono text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 p-2 rounded">

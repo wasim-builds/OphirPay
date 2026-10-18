@@ -25,7 +25,7 @@ test.describe("Timelocked actions", () => {
       page.getByRole("heading", { level: 1, name: "Timelocked Actions" })
     ).toBeVisible({ timeout: 15000 });
 
-    await expect(page.getByText("Locked")).toBeVisible({ timeout: 15000 });
+    await expect(page.getByText("Locked").first()).toBeVisible({ timeout: 15000 });
     await expect(page.getByText("#7")).toBeVisible();
     // Unlock countdown renders (e.g. "5h 0m remaining").
     await expect(page.getByText(/\d+h \d+m remaining/)).toBeVisible();
@@ -42,7 +42,7 @@ test.describe("Timelocked actions", () => {
       page.getByRole("heading", { level: 1, name: "Timelocked Actions" })
     ).toBeVisible({ timeout: 15000 });
 
-    await expect(page.getByText("Ready")).toBeVisible({ timeout: 15000 });
+    await expect(page.getByText("Ready").first()).toBeVisible({ timeout: 15000 });
     const execute = page.getByRole("button", { name: "✓ Execute" });
     await expect(execute).toBeEnabled();
     await execute.click();
@@ -102,7 +102,7 @@ test.describe("Timelocked actions", () => {
     });
 
     await page.goto("/timelock");
-    await expect(page.getByText("Executed")).toBeVisible({ timeout: 15000 });
+    await expect(page.getByText("Executed").first()).toBeVisible({ timeout: 15000 });
     await expect(page.getByRole("button", { name: "✓ Execute" })).toHaveCount(0);
     await expect(page.getByRole("button", { name: "Cancel" })).toHaveCount(0);
   });
