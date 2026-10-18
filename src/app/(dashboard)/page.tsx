@@ -304,7 +304,7 @@ export default function TreasuryDashboard() {
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Connect your Stellar wallet
                 </p>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
                   to view accounts and balances
                 </p>
               </div>
@@ -333,7 +333,7 @@ export default function TreasuryDashboard() {
               </p>
               <button
                 onClick={() => loadOnChain()}
-                className="text-sm text-red-600 dark:text-red-400 underline hover:no-underline font-medium"
+                className="text-sm text-red-700 dark:text-red-300 underline hover:no-underline font-medium"
               >
                 Retry
               </button>

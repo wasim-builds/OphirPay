@@ -370,7 +370,7 @@ function PaymentsClient() {
     return (
       <div>
         <span>{formatAmount(xlmAmount, "XLM")}</span>
-        <span className="block text-[11px] text-amber-600 dark:text-amber-400 font-sans">
+        <span className="block text-[11px] text-amber-800 dark:text-amber-300 font-sans">
           {isPriceUnavailable
             ? "(USD unavailable)"
             : isPriceLoading

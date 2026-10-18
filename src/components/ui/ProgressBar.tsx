@@ -36,6 +36,7 @@ export function ProgressBar({
       <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
         <div
           role="progressbar"
+          aria-label="Progress"
           aria-valuenow={pct}
           aria-valuemin={0}
           aria-valuemax={100}
