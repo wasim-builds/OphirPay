@@ -11,6 +11,9 @@ runs:
     - name: Install dependencies
       run: npm ci
       shell: bash
+      env:
+        PUPPETEER_SKIP_DOWNLOAD: "true"
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
     - name: Prisma Generate
       run: npx prisma generate
       shell: bash
