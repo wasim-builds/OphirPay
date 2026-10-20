@@ -41,8 +41,15 @@ next-env.d.ts
 prisma/dev.db
 prisma/dev.db-journal
 
+# agent runtime temporary session artifacts
+.agents/orchestrator*
+.agents/sentinel*
+.agents/teamwork*
+.agents/ORIGINAL_REQUEST.md
+
 # IDE
 .vscode/
+
 .idea/
 *.swp
 *.swo
