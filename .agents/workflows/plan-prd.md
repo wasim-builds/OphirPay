@@ -159,4 +159,4 @@ Next step: /plan .claude/prds/{name}.prd.md
 - **SCOPE_BOUNDED**: explicit MVP and explicit out-of-scope.
 - **NO_IMPLEMENTATION_DETAIL**: file paths, libraries, or task breakdowns are absent — if they appeared, move them to the `/plan` step.
 
-Background on the staged markdown flow: [docs/PLAN-PRD-PATTERN.md](../docs/PLAN-PRD-PATTERN.md).
+Background on the staged markdown flow: `docs/PLAN-PRD-PATTERN.md`.
